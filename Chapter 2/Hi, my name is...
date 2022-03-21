@@ -1,0 +1,13 @@
+# Hi, my name is...
+print('Your name')
+name = input()
+print('Your age')
+age = int(input())
+if name == 'Alice':
+    print('Hi Alice, have a nice day!')
+elif age <= 12:
+    print('You are not Alice,kiddo')
+elif age >= 2000:
+    print('Unlike you, Alice is not an undead, immortal vampire!')
+elif age >= 100:
+    print('Your are not Alice,grannie')
