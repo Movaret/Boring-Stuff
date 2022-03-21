@@ -1,3 +1,5 @@
+#Grocery List v.1
+
 GroceryList = []
 while True:
     print('Enter product name (or enter "done" to stop)')
@@ -8,3 +10,18 @@ while True:
 print('Total grocery list is:')
 for g in GroceryList:
     print(' ' + g)
+
+
+
+#Grocery List v.2
+
+GroceryList = []
+while True:
+    print('Enter product name (or enter "done" to stop)')
+    name = input()
+    if name == 'done':
+        break
+    GroceryList = GroceryList + [name]
+print('Total grocery list is:')
+for g in range(len(GroceryList)):
+    print('Item № ' + str(g) + ' in grocery list is: ' + GroceryList[g])
