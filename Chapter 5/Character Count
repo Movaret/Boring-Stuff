@@ -7,3 +7,19 @@ for c in msg:
     count[c] = count[c] + 1
 
 print(count)
+
+
+#Pretty Character Count
+
+import pprint as p
+
+msg = 'It was a bright cold day in April, and the clocks were strikin thirteen'
+
+count = {}
+
+for c in msg:
+    count.setdefault(c, 0)
+    count[c] = count[c] + 1
+
+p.pprint(count)
+print(p.pformat(count))
