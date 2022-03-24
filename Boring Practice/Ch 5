@@ -1,0 +1,33 @@
+# Fantasy Game Inventory
+
+inventory = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
+emptyinv = {}
+
+def displayInventory (MyInv):
+    print('Inventory:')
+    
+    totalinv = 0
+    for k,v in MyInv.items():
+        print(str(v) + ' ' + k)
+        totalinv += v
+    
+    print('Total number of items: ' + str(totalinv))
+    
+
+displayInventory(inventory)
+
+
+#Dragon Loot
+
+dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
+
+
+def addToInventory(inventory, addedItems):
+
+    for item in addedItems:
+        if item in inventory.keys():
+            inventory[item] += 1
+        else:
+            inventory.setdefault(item, 1)
+    print('Updated ', end='')
+    displayInventory(inventory)
